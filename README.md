@@ -1,2 +1,2 @@
 # CSS-projects
-practicing and creating projects using CSS
+practicing and creating projects using CSS.
