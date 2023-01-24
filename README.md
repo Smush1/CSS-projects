@@ -1,2 +1,2 @@
 # Projects
-practicing and creating projects using CSS.
+practicing and creating projects using HTML,CSS and Javascript.
