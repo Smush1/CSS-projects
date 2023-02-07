@@ -12,6 +12,10 @@ img{
     height: auto;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family:1.5rem 'Nunito Sans', sans-serif;
     min-height: 100vh;  
@@ -19,22 +23,71 @@ body{
     background-color: #475569;
     display: flex;
     flex-direction: column;
+    text-align: center;
     
 }
 
-header{
+main{
+    flex-grow: 1;
+}
+
+header, footer{
     color: whitesmoke;
+    background-color: #475569;
+    position:sticky;
+}
+
+header{
     font-size: 2rem;
-    text-align: center;
+    top:0;
 }
 
 nav{
     background-color: whitesmoke;
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.6rem;
 }
 
 a{
     display: block;
     text-decoration: none;
     color: #475569;
+}
+
+a:active, a:focus{
+    color: hsla(215, 19%, 35%, 0.195);
+}
+
+.card{
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 1.5rem;
+}
+
+figure {
+    padding: 1rem;
+}
+
+figure img{
+    border-radius: 50% ;
+    border: 2px solid black;
+}
+
+
+figcaption{
+    font-weight: 600;
+    font-size:2.4rem ;
+    padding: 0.7rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+
+footer{
+    bottom:0;
+    font-size: 1.4rem;
 }
