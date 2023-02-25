@@ -13,7 +13,7 @@
     margin: 100px 150px 100px 150px;
 }
 .main-container:hover{
-    transform: scale(1.025);
+    transform: scale(1.1);
 }
 
 .thecard{
