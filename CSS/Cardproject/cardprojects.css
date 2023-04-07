@@ -34,9 +34,10 @@ main{
     align-items: center;
     margin:1rem;
 }
-
-
-header,nav, footer{
+/* 
+The is and where pseudo elements are almost identical and can help
+in achieving higher selector specity score  */
+is:(header,nav, footer){
     color: whitesmoke;
     background-color: #475569;
     position:sticky;
@@ -62,7 +63,9 @@ a{
     font-size: 1.5rem;
 }
 
-a:active, a:focus{
+
+
+nav :is(a:active, a:focus){
     color: hsla(215, 19%, 35%, 0.195);
 }
 
@@ -75,6 +78,12 @@ a:active, a:focus{
     scroll-margin-top: 8rem;
 }
 
+/* target pseudo class helps to provide specific colors
+ while a particular element is selected */
+.card:target{
+    background-color: #8e98a5;
+}
+
 figure {
     padding: 1rem;
 }
@@ -84,6 +93,15 @@ figure img{
     border: 4px double #333;
 }
 
+/* use of alt attribute and not pseudo class is mentioned below  */
+
+figure img:not(alt){
+    border: 5px solid salmon
+}
+
+/* figure img[alt]{
+    border: 5px solid #f00
+} */
 
 figcaption{
     font-weight: 600;

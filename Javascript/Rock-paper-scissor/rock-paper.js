@@ -1,11 +1,12 @@
-const computerChoice = document.querySelector("#computer-choice")
+const computerChoiceDisplay = document.querySelector("#computer-choice")
 const userChoiceDisplay = document.querySelector("#user-choice")
 const result = document.querySelector("#result")
-const possiblechoices = document.querySelectorAll("button")
-
-possiblechoices.forEach(possiblechoices =>) {
-
-}
-
+const possibleChoices = document.querySelectorAll("button")
 let userChoice
+
+possibleChoices.forEach(possiblechoice => possiblechoice.addEventListener("click", (e)=> {
+    userChoice =e.target.id
+    userChoiceDisplay.innerHTML = userChoice
+
+})) 
 
