@@ -109,6 +109,22 @@ figcaption{
     padding: 0.7rem;
 }
 
+/* before and after pseudo class can be used as mentioned below */
+
+figcaption::after{
+    content: " 😀";
+    display:block;
+}
+
+figcaption::first-letter{
+    font-size: 3rem;
+}
+
+/* figcaption::before{
+    content: 'Hello';
+    display: block;
+} */
+
 p{
     font-size: 1.5rem;
 }
