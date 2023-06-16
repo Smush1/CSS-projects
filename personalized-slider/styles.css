@@ -1,0 +1,71 @@
+
+/* ||  RESET */
+
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* ||  BODY */
+
+body{
+    background-color: lightgray;
+    font-size: 50px;
+}
+
+
+/* ||  BUTTONS */
+.btn-left, .btn-right {
+    padding: 2.5%;
+    font-size: 3rem;
+    border: none;
+    background: transparent;
+}
+
+.btn-left{
+    float: left;
+}
+.btn-right{
+    float: right;
+}
+
+/* || IMAGE CONTAINER AND IMAGE */
+.image-view, .image-container{
+  height:100%;
+
+}
+
+.image-view{
+    width: 100%;
+    height: auto;
+    transition: 200ms opacity ease-in;
+    opacity: 1;
+}
+
+.elementToFadeInAndOut {
+    opacity: 1;
+    animation: fade 1.5s linear;
+}
+
+
+
+
+
+@keyframes fade {
+  0% {opacity: 0}
+  50% { opacity: 0.5 }
+  100% { opacity: 1 }
+}
+
+/* ||  MAIN CONTAINER FOR BUTTONS AND IMAGE */
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%-30px)
+}
