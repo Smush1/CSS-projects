@@ -34,15 +34,10 @@ body{
 }
 
 /* || IMAGE CONTAINER AND IMAGE */
-.image-view, .image-container{
-  height:100%;
-
-}
 
 .image-view{
     width: 100%;
     height: auto;
-    transition: 200ms opacity ease-in;
     opacity: 1;
 }
 
@@ -67,5 +62,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100%-30px)
+}
+
+@media (max-width:808px) {
+    .main-container{
+        max-height: 100vh;
+    }
+    
 }
